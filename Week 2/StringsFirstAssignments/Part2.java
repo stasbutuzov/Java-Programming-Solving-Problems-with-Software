@@ -1,7 +1,8 @@
 /**
  * Resources: https://www.dukelearntoprogram.com//course2/index.php
+ *
  * @author stasbutuzov
- * @version Feb 26, 2021
+ * @version Mar 13, 2021
  */
 
 public class Part2 {
@@ -28,7 +29,7 @@ public class Part2 {
     }
 
     public static void main(String[] args) {
-        System.out.println("testSimpleGene:");
-        testSimpleGene();
+        Part2 test = new Part2();
+        test.testSimpleGene();
     }
 }

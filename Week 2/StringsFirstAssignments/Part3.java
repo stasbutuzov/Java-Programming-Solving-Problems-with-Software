@@ -1,7 +1,8 @@
 /**
  * Resources: https://www.dukelearntoprogram.com//course2/index.php
+ *
  * @author stasbutuzov
- * @version Mar 1, 2021
+ * @version Mar 13, 2021
  */
 
 public class Part3 {
@@ -35,5 +36,10 @@ public class Part3 {
             return result;
         }
         return stringb;
+    }
+
+    public static void main(String[] args) {
+        Part3 test = new Part3();
+        test.testing();
     }
 }
