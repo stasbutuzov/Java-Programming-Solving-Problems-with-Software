@@ -19,7 +19,7 @@ public class Part1 {
     }
 
     public static void testFindStopCodon() {
-        System.out.println("\nTest FindStopCodon method.");
+        System.out.println("\nTest findStopCodon method.");
         String dna = "AAATATGAAATAGTAATTTTGATTTTTT";
         System.out.println("Testing string of DNA: " + dna);
 
@@ -69,7 +69,7 @@ public class Part1 {
     }
 
     public static void testFindGene() {
-        System.out.println("\nTest FindGene method.");
+        System.out.println("\nTest findGene method.");
         String dna = "AAATATCAAATAGTAAATAA";
         System.out.println("Testing string of DNA: " + dna);
         System.out.println("Valid gene is " + findGene(dna));
@@ -108,8 +108,15 @@ public class Part1 {
     }
 
     public static void testPrintAllGenes() {
-        System.out.println("\nTest PrintAllGenes method.");
+        System.out.println("\nTest printAllGenes method.");
         String dna = "xxxATGxxxTAAxxxATGxxxTAGxxxTGA";
+        System.out.println("Testing string of DNA: " + dna);
+        System.out.println("Found genes:");
+        printAllGenes(dna);
+        System.out.println("–––");
+
+        dna = "AAATATGAAATGATAATTTTGATAGAAATAG";
+        System.out.println("Testing string of DNA: " + dna);
         System.out.println("Found genes:");
         printAllGenes(dna);
     }
