@@ -35,7 +35,6 @@ public class Part3 {
     }
 
     public static int countGenes(String dna) {
-        int index = 0;
         int count = 0;
         while (true) {
             String currGene = findGene(dna);
@@ -43,7 +42,7 @@ public class Part3 {
                 break;
             }
             count += 1;
-            dna = dna.substring(index + currGene.length());
+            dna = dna.substring(currGene.length());
         }
         return count;
     }
@@ -51,18 +50,15 @@ public class Part3 {
     public static void testCountGenes() {
         System.out.println("Test countGenes method.");
         String dna = "ATGTAAGATGCCCTAGT";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("The number of genes found in DNA: " + countGenes(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nThe number of genes found in DNA: " + countGenes(dna));
         System.out.println("–––");
 
         dna = "AAATATGAAATGATAATTTTGATAGAAATAG";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("The number of genes found in DNA: " + countGenes(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nThe number of genes found in DNA: " + countGenes(dna));
         System.out.println("–––");
 
         dna = "AAATATGTTTGTATGTGTAAAATTG";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("The number of genes found in DNA: " + countGenes(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nThe number of genes found in DNA: " + countGenes(dna));
     }
 
     public static void main(String[] args) {

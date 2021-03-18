@@ -19,7 +19,7 @@ public class Part1 {
     }
 
     public static void testFindStopCodon() {
-        System.out.println("\nTest findStopCodon method.");
+        System.out.println("Test findStopCodon method.");
         String dna = "AAATATGAAATAGTAATTTTGATTTTTT";
         System.out.println("Testing string of DNA: " + dna);
 
@@ -71,53 +71,45 @@ public class Part1 {
     public static void testFindGene() {
         System.out.println("\nTest findGene method.");
         String dna = "AAATATCAAATAGTAAATAA";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Valid gene is " + findGene(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nValid gene is " + findGene(dna));
         System.out.println("–––");
 
         dna = "AAATATGAAATAGTGGTTTTGGAAAGT";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Valid gene is " + findGene(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nValid gene is " + findGene(dna));
         System.out.println("–––");
 
         dna = "AAATATGAAATGATAATTTTGATAGAAATAG";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Valid gene is " + findGene(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nValid gene is " + findGene(dna));
         System.out.println("–––");
 
         dna = "AAATATGTTTGTATGTGTAAAATTG";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Valid gene is " + findGene(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nValid gene is " + findGene(dna));
         System.out.println("–––");
 
         dna = "xxxATGxxxTAAxxxATGxxxTAGxxxTGA";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Valid gene is " + findGene(dna));
+        System.out.println("Testing string of DNA: " + dna + "\nValid gene is " + findGene(dna));
     }
 
     public static void printAllGenes(String dna) {
-        int startIndex = 0;
         while (true) {
             String currGene = findGene(dna);
             if (currGene.isEmpty()) {
                 break;
             }
             System.out.println(currGene);
-            dna = dna.substring(startIndex + currGene.length());
+            dna = dna.substring(currGene.length());
         }
     }
 
     public static void testPrintAllGenes() {
         System.out.println("\nTest printAllGenes method.");
         String dna = "xxxATGxxxTAAxxxATGxxxTAGxxxTGA";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Found genes:");
+        System.out.println("Testing string of DNA: " + dna + " \nFound genes:");
         printAllGenes(dna);
         System.out.println("–––");
 
         dna = "AAATATGAAATGATAATTTTGATAGAAATAG";
-        System.out.println("Testing string of DNA: " + dna);
-        System.out.println("Found genes:");
+        System.out.println("Testing string of DNA: " + dna + " \nFound genes:");
         printAllGenes(dna);
     }
 
