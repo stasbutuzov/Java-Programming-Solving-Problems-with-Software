@@ -2,7 +2,7 @@
  * Resources: https://www.dukelearntoprogram.com//course2/index.php
  *
  * @author stasbutuzov
- * @version Mar 13, 2021
+ * @version Mar 25, 2021
  */
 
 public class Part1 {
@@ -97,7 +97,7 @@ public class Part1 {
                 break;
             }
             System.out.println(currGene);
-            dna = dna.substring(currGene.length());
+            dna = dna.substring(dna.indexOf(currGene) + currGene.length());
         }
     }
 
