@@ -69,8 +69,8 @@ public class ParsingExportData {
         
         System.out.println("Test numberOfExporters method");
         parser = fr.getCSVParser();
-        String exportitem = "gold";
-        System.out.println("Number of countries that export " + "'" + exportitem + "'" + ": " + numberOfExporters(parser, exportitem));
+        String exportItem = "gold";
+        System.out.println("Number of countries that export " + "'" + exportItem + "'" + ": " + numberOfExporters(parser, exportItem));
         System.out.println("––––––––––––––––––––––––––––––");
         
         System.out.println("Test bigExporters method");
