@@ -4,8 +4,10 @@ import java.io.*;
 import java.util.*;
 
 /**
+ * <pre>
  * Resources: https://www.dukelearntoprogram.com//course2/index.php
  * Data set: https://www.dukelearntoprogram.com//course2/data/nc_weather.zip
+ * </pre>
  *
  * @author stasbutuzov
  * @version Mar 30, 2021
