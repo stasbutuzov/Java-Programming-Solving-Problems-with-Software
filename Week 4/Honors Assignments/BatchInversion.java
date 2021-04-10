@@ -1,5 +1,5 @@
 import edu.duke.*;
-import java.io.File;
+import java.io.*;
 
 /**
  * Programming Exercise (PDF-version):
@@ -8,6 +8,7 @@ import java.io.File;
  * @author stasbutuzov
  * @version Apr 3, 2021
  */
+
 public class BatchInversion {
     public ImageResource makeInversion(ImageResource inImage) {
         ImageResource outImage = new ImageResource(inImage.getWidth(), inImage.getHeight());
@@ -17,7 +18,7 @@ public class BatchInversion {
             int red = (255 - inPixel.getRed());
             int green = (255 - inPixel.getGreen());
             int blue = (255 - inPixel.getBlue());
-            
+
             p.setRed(red);
             p.setGreen(green);
             p.setBlue(blue);
@@ -41,7 +42,7 @@ public class BatchInversion {
     }
 
     public static void main(String args[]) {
-        BatchInversion test = new BatchInversion();
-        test.selectAndConvert();
+        BatchInversion run = new BatchInversion();
+        run.selectAndConvert();
     }
 }

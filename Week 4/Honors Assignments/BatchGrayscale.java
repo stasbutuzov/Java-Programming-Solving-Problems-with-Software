@@ -1,5 +1,5 @@
 import edu.duke.*;
-import java.io.File;
+import java.io.*;
 
 /**
  * Programming Exercise (PDF-version):
@@ -8,6 +8,7 @@ import java.io.File;
  * @author stasbutuzov
  * @version Apr 3, 2021
  */
+
 public class BatchGrayscale {
     public ImageResource makeGray(ImageResource inImage) {
         ImageResource outImage = new ImageResource(inImage.getWidth(), inImage.getHeight());
@@ -42,8 +43,7 @@ public class BatchGrayscale {
     }
 
     public static void main(String args[]) {
-        BatchGrayscale test = new BatchGrayscale();
-        test.selectAndConvert();
-
+        BatchGrayscale run = new BatchGrayscale();
+        run.selectAndConvert();
     }
 }
