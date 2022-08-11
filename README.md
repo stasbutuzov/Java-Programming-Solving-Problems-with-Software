@@ -1,6 +1,6 @@
 ![GitHub top language](https://img.shields.io/github/languages/top/stasbutuzov/Java-Programming-Solving-Problems-with-Software?color=9cf&label=Java&logo=Java&logoColor=red&style=flat-square)
 ![GitHub code size in bytes](https://img.shields.io/github/languages/code-size/stasbutuzov/Java-Programming-Solving-Problems-with-Software?color=9cf&label=Code%20Size&style=flat-square) 
-[![Created Badge](https://badges.pufler.dev/created/stasbutuzov/Java-Programming-Solving-Problems-with-Software?color=9cf&label=Created&logoColor=red&style=flat-square)](https://github.com/stasbutuzov/Java-Programming-Solving-Problems-with-Software)
+[![Created Badge](https://badges.strrl.dev/created/stasbutuzov/Java-Programming-Solving-Problems-with-Software?color=9cf&label=Created&logoColor=red&style=flat-square)](https://github.com/stasbutuzov/Java-Programming-Solving-Problems-with-Software)
 ![GitHub last commit](https://img.shields.io/github/last-commit/stasbutuzov/Java-Programming-Solving-Problems-with-Software?color=9cf&label=Last%20Commit&style=flat-square)
 ### Overview
 Repository contains solutions to programming assignments for the course **"Java Programming: Solving Problems with Software"**.  
